@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 
 // Replace this with your personal access token
-const TOKEN = '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';
+const TOKEN = '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';
 
 // // Make a GET request to the GitHub API to retrieve a list of your repositories
 // axios.get('https://api.github.com/user/repos', {
