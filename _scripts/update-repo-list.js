@@ -5,7 +5,7 @@ const fs = require('fs');
 const TOKEN = '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';
 
 // Make a GET request to the GitHub API to retrieve a list of your repositories
-axios.get('https://api.github.com/user/repos', {
+axios.get('https://api.github.com/fire17/repos', {
   headers: {
     Authorization: `Token ${TOKEN}`
   }
