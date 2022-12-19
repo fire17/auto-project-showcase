@@ -1,0 +1,12 @@
+[
+  {
+    "name": "repo-1",
+    "description": "This is the first repository",
+    "url": "https://github.com/fire17/auto-project-showcase"
+  },
+  {
+    "name": "repo-2",
+    "description": "This is the second repository",
+    "url": "https://github.com/fire17/gist-repo"
+  }
+]

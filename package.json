@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+      "axios": "^0.21.0"
+    },
+    "scripts": {
+      "update-repo-list": "node _scripts/update-repo-list.js"
+    }
+  }
+  

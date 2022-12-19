@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Project Showcase</title>
+   </head>
+  <body>
+    {% include repo-list.html %}
+  </body>
+</html>
