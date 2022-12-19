@@ -1,6 +1,31 @@
-<div class="repo-list">
-    {% for repo in site.data.repos %}
-      {% include repo-list-item.html %}
-    {% endfor %}
-  </div>
-  
+<ul id="repo-list">
+  {% for repo in site.data.repos %}
+    <li>
+      <a href="{{ repo.html_url }}">{{ repo.name }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  // Replace this with your personal access token
+  const TOKEN = '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';
+
+  async function updateRepoList() {
+    try {
+      // Make a GET request to the GitHub API to retrieve a list of your repositories
+      const response = await axios.get('https://api.github.com/user/repos', {
+        headers: {
+          Authorization: `Token ${TOKEN}`
+        }
+      });
+
+      // Save the list of repositories to the _data/repos.json file
+      fs.writeFileSync('_data/repos.json', JSON.stringify(response.data));
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  updateRepoList();
+</script>
